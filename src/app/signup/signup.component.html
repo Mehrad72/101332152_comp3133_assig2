@@ -1,0 +1,58 @@
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    text-align: center;      }      form {
+    max-width: 400px;       
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+  }
+  h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  label, input {
+    display: block;
+    font-size: 24px;
+    margin-bottom: 10px;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px #ccc;
+  }
+  input:focus {
+    outline: none;
+    box-shadow: 2px 2px 4px #4d90fe;
+  }
+  button {
+    background-color: #4d90fe;
+    color: #fff;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover {
+    background-color: #357ae8;
+  }
+</style>
+<div>
+<form (submit)="signup(username.value, email.value, password.value)">
+  <h1>Signup Form</h1>
+  <label for="username">Username:</label>
+  <input type="text" id="username" name="username" required #username> 
+  <label for="email">Email:</label>
+  <input type="email" id="email\" name="email" required #email>
+  <br>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required #password>
+  <br>
+  <button type="submit">Signup</button>
+</form>
+</div>
+  

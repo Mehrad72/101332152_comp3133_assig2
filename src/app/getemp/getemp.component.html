@@ -1,0 +1,6 @@
+<ul *ngIf="data">
+    <li *ngFor="let emp of data.employees">
+      {{ emp.firstName }} {{ emp.lastName }}, {{ emp.email }} {{ emp.Gender }} {{ emp.salary }}
+    </li>
+  </ul>
+  

@@ -4,6 +4,7 @@ import { ModelComponent } from './model/model.component';
 
 const routes: Routes = [
   { path: '', component: ModelComponent },
+  { path: 'getemp', component: ModelComponent },
 ];
 
 @NgModule({
